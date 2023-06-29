@@ -1,0 +1,102 @@
+.info{
+  padding: 0;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  &:before, &:after{
+    position: absolute;
+    content: '';
+    z-index: -1;
+  }
+  &:before{
+    left: -10rem;
+    bottom: -1.8rem;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Слой_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 400 369' style='enable-background:new 0 0 400 369;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%23F3F3F3;%7D%0A%3C/style%3E%3Cpath class='st0' d='M300.2,123.3l49.9,46.4c4.2,3.9,6.5,9.2,6.5,14.7c0,5.5-2.4,10.8-6.5,14.7l-49.9,46.4l32.8,30.6l67-62.3V155 l-67-62.3L300.2,123.3z M99.8,123.3L67,92.7L0,155v58.9l67,62.3l32.9-30.6L50,199.3c-2.1-1.9-3.7-4.2-4.9-6.8 c-1.1-2.5-1.7-5.2-1.7-8c0-2.7,0.6-5.4,1.7-8c1.1-2.5,2.8-4.8,4.9-6.8L99.8,123.3z M217.4,322.5c-2.1,1.9-4.5,3.5-7.3,4.5 c-2.7,1-5.6,1.6-8.6,1.6c-2.9,0-5.9-0.5-8.6-1.6c-2.7-1-5.2-2.6-7.3-4.5l-49.9-46.4l-32.8,30.5l67,62.3h63.3l67-62.3l-32.8-30.5 L217.4,322.5z'/%3E%3Cpath class='st0' d='M186,46.5c2.1-1.9,4.5-3.5,7.3-4.5c2.7-1,5.6-1.6,8.6-1.6c2.9,0,5.9,0.5,8.6,1.6c2.7,1,5.2,2.6,7.3,4.5 l49.9,46.4l32.8-30.5L233.4,0L170,0l-67,62.3l32.8,30.5L186,46.5z'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    width: 24.2rem;
+    height: 22.2rem;
+  }
+  &:after{
+    opacity: 0;
+    top: 5rem;
+    right: 34rem;
+    width: 47.2rem;
+    height: 28.3rem;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Слой_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 473 284' style='enable-background:new 0 0 473 284;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%23F3F3F3;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Cpath class='st0' d='M420.7,137.9c0.8-0.5,1.6-0.8,2.6-0.8h49.2V74.4L394.6,0.5H72.1L0.5,69.6v71.1h96.3v88.1h219.5 c5.5,0,10.9,1,16,3c5,2,9.6,5,13.5,8.7l44.5,42.9h82.1v-88.8l-52.5-50c-0.6-0.6-1.1-1.4-1.3-2.3c-0.2-0.9-0.1-1.8,0.3-2.6 C419.3,139.1,419.9,138.4,420.7,137.9z M393.5,137.7c-0.4,0.9-1,1.6-1.8,2.1c-0.8,0.5-1.8,0.8-2.7,0.8H96.9v-26.7 c0-3.7,0.8-7.4,2.2-10.8c1.5-3.4,3.6-6.5,6.3-9.2c5.5-5.3,13-8.3,20.7-8.3h217.4l48.8,47c0.7,0.7,1.1,1.5,1.3,2.4 C394,135.9,393.9,136.8,393.5,137.7z'/%3E%3C/svg%3E%0A");
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+
+  }
+  &-desc{
+    max-width: 31.4rem;
+    .text-section{
+      max-width: 28rem;
+    }
+  }
+  &-media{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+    transform: translate(13rem, 0);
+    width: 70rem;
+    height: 100%;
+    img{
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .info{
+    &-desc{
+      max-width: 100%;
+      .text-section{
+        max-width: 100%;
+      }
+    }
+    &-media{
+      transform: translate(43rem, 0);
+    }
+  }
+}
+//@media screen and (min-width: 992px){
+//  .info{
+//    &-media{
+//      width: auto;
+//      transform: translate(0, 0);
+//      right: 0;
+//      max-width: 70rem;
+//      left: auto;
+//    }
+//  }
+//}
+@media screen and (min-width: 1200px){
+  .info{
+    &:before{
+      left: 0;
+      bottom: -10.8rem;
+      background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Слой_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 400 369' style='enable-background:new 0 0 400 369;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%23F3F3F3;%7D%0A%3C/style%3E%3Cpath class='st0' d='M300.2,123.3l49.9,46.4c4.2,3.9,6.5,9.2,6.5,14.7c0,5.5-2.4,10.8-6.5,14.7l-49.9,46.4l32.8,30.6l67-62.3V155 l-67-62.3L300.2,123.3z M99.8,123.3L67,92.7L0,155v58.9l67,62.3l32.9-30.6L50,199.3c-2.1-1.9-3.7-4.2-4.9-6.8 c-1.1-2.5-1.7-5.2-1.7-8c0-2.7,0.6-5.4,1.7-8c1.1-2.5,2.8-4.8,4.9-6.8L99.8,123.3z M217.4,322.5c-2.1,1.9-4.5,3.5-7.3,4.5 c-2.7,1-5.6,1.6-8.6,1.6c-2.9,0-5.9-0.5-8.6-1.6c-2.7-1-5.2-2.6-7.3-4.5l-49.9-46.4l-32.8,30.5l67,62.3h63.3l67-62.3l-32.8-30.5 L217.4,322.5z'/%3E%3Cpath class='st0' d='M186,46.5c2.1-1.9,4.5-3.5,7.3-4.5c2.7-1,5.6-1.6,8.6-1.6c2.9,0,5.9,0.5,8.6,1.6c2.7,1,5.2,2.6,7.3,4.5 l49.9,46.4l32.8-30.5L233.4,0L170,0l-67,62.3l32.8,30.5L186,46.5z'/%3E%3C/svg%3E%0A");
+      width: 40rem;
+      height: 36.6rem;
+    }
+    &:after{
+      opacity: 1;
+    }
+    &-media{
+      width: auto;
+      transform: translate(0, 0);
+      right: 0;
+      max-width: 70rem;
+      left: auto;
+    }
+  }
+}
