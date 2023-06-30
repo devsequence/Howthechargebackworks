@@ -2185,15 +2185,20 @@ input:-moz-ui-invalid {
   }
   .contact-form {
     right: 0;
-    max-width: 312px;
+    max-width: calc(100% - 30px);
   }
   .contact-form__title {
     font-size: 20px;
     line-height: 28px;
+    text-align: center;
   }
   .contact-form__subtitle {
     font-size: 14px;
     line-height: 20px;
+    text-align: center;
+  }
+  .contact-form form {
+    margin: 0 auto;
   }
   .footer {
     padding: 54px 0 43px;
@@ -2227,7 +2232,10 @@ input:-moz-ui-invalid {
     padding: 100px 0 280px;
   }
   .hero-form {
-    max-width: 312px;
+    max-width: calc(100% - 30px);
+  }
+  .hero-form form {
+    margin: 0 auto;
   }
   .work-media {
     max-width: calc(100% - 40px);

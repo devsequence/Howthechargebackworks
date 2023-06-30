@@ -260,14 +260,19 @@
     height: 488px;
     &-form{
       right: 0;
-      max-width: 312px;
+      max-width: calc(100% - 30px);
       &__title{
         font-size: 20px;
         line-height: 28px;
+        text-align: center;
       }
       &__subtitle{
         font-size: 14px;
         line-height: 20px;
+        text-align: center;
+      }
+      form{
+        margin: 0 auto;
       }
     }
   }
@@ -302,7 +307,10 @@
   .hero{
     padding: 100px 0 280px;
     &-form{
-      max-width: 312px;
+      max-width: calc(100% - 30px);
+      form{
+        margin: 0 auto;
+      }
     }
   }
   .work{

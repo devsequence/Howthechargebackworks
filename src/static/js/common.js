@@ -48,8 +48,11 @@ $(document).mouseup(function (e){
     if (!div.is(e.target)
         && div.has(e.target).length === 0) {
         $('body').removeClass('scroll');
+        if($('.header').hasClass('active')){
+            $('.header-btn').find('span').toggleClass('hidden');
+        }
         $('.header, .header-btn').removeClass('active');
-        $('.header-btn').find('span').toggleClass('hidden');
+
     }
 });
 $('.header-nav a').on('click', function (e) {
